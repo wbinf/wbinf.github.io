@@ -99,7 +99,7 @@
 <meta property="og:site_name" content="随遇而安">
 <meta property="og:description" content="前言在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有： &amp;ensp;1.1 Java的java.util.Date和java.util.Calendar类易用性差，不支持时区，而且他们都不是线程安全的；&amp;ensp;1.2 用于格式化日期的类DateFormat被放在java.text包中，它是一个抽象类，所以我1 们需要实例化一个SimpleDateFormat对象">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-25T02:18:20.406Z">
+<meta property="og:updated_time" content="2019-07-26T01:55:00.229Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java 8的java.time包">
 <meta name="twitter:description" content="前言在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有： &amp;ensp;1.1 Java的java.util.Date和java.util.Calendar类易用性差，不支持时区，而且他们都不是线程安全的；&amp;ensp;1.2 用于格式化日期的类DateFormat被放在java.text包中，它是一个抽象类，所以我1 们需要实例化一个SimpleDateFormat对象">
@@ -416,7 +416,7 @@
 <li><p>Zoned(时区) − 通过制定的时区处理日期时间。</p>
 </li>
 <li><p>新的java.time包涵盖了所有处理日期，时间，日期/时间，时区，时刻（instants），过程（during）与时钟（clock）的操作，下面我们看看这些类的用法。  </p>
-<h3 id="LocalDate和LocalTime"><a href="#LocalDate和LocalTime" class="headerlink" title="LocalDate和LocalTime"></a>LocalDate和LocalTime</h3><p>LocalDate类表示一个具体的日期，但不包含具体时间，也不包含时区信息。可以通过LocalDate的静态方法of()创建一个实例，LocalDate也包含一些方法用来获取年份，月份，天，星期几等：</p>
+<h3 id="LocalDate和LocalTime"><a href="#LocalDate和LocalTime" class="headerlink" title="LocalDate和LocalTime"></a>LocalDate和LocalTime</h3><p>LocalDate类表示一个具体的日期，但不包含具体时间，也不包含时区信息。可以通过LocalDate的静态方法of()创建一个实例，LocalDate也包含一些方法用来获取年份，月份，天，星期几等：<a id="more"></a></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> LocalDate localDate = LocalDate.of(<span class="number">2019</span>, <span class="number">7</span>, <span class="number">24</span>);   <span class="comment">//初始化一个自定义期：2019-07-24</span></span><br><span class="line"><span class="keyword">int</span> year = localDate.getYear();                     <span class="comment">// 年份：2019</span></span><br><span class="line">Month month = localDate.getMonth();                 <span class="comment">// 月份：JULY</span></span><br><span class="line"><span class="keyword">int</span> dayOfMonth = localDate.getDayOfMonth();         <span class="comment">// 月份中的第几天：24</span></span><br><span class="line">DayOfWeek dayOfWeek = localDate.getDayOfWeek();     <span class="comment">// 一周的第几天：WEDNESDAY</span></span><br><span class="line"><span class="keyword">int</span> length = localDate.lengthOfMonth();             <span class="comment">// 月份的天数：31</span></span><br><span class="line"><span class="keyword">boolean</span> leapYear = localDate.isLeapYear();          <span class="comment">// 是否为闰年：false</span></span><br><span class="line">LocalDate localDate  = LocalDate.now();             <span class="comment">//获取当前日期 2019-07-23</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -642,7 +642,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -653,7 +653,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -664,7 +664,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

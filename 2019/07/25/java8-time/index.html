@@ -91,18 +91,18 @@
 
 
 
-<meta name="description" content="前言在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有： &amp;ensp;1.1 Java的java.util.Date和java.util.Calendar类易用性差，不支持时区，而且他们都不是线程安全的；&amp;ensp;1.2 用于格式化日期的类DateFormat被放在java.text包中，它是一个抽象类，所以我1 们需要实例化一个SimpleDateFormat对象">
+<meta name="description" content="前言在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有： &amp;ensp;1.1 Java的java.util.Date和java.util.Calendar类易用性差，不支持时区，而且他们都不是线程安全的；&amp;ensp;1.2 用于格式化日期的类DateFormat被放在java.text包中，它是一个抽象类，所以我1 们需要实例化一个SimpleDateFormat对象来">
 <meta name="keywords" content="java8,time">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java 8的java.time包">
 <meta property="og:url" content="http://yoursite.com/2019/07/25/java8-time/index.html">
 <meta property="og:site_name" content="随遇而安">
-<meta property="og:description" content="前言在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有： &amp;ensp;1.1 Java的java.util.Date和java.util.Calendar类易用性差，不支持时区，而且他们都不是线程安全的；&amp;ensp;1.2 用于格式化日期的类DateFormat被放在java.text包中，它是一个抽象类，所以我1 们需要实例化一个SimpleDateFormat对象">
+<meta property="og:description" content="前言在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有： &amp;ensp;1.1 Java的java.util.Date和java.util.Calendar类易用性差，不支持时区，而且他们都不是线程安全的；&amp;ensp;1.2 用于格式化日期的类DateFormat被放在java.text包中，它是一个抽象类，所以我1 们需要实例化一个SimpleDateFormat对象来">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-26T01:55:00.229Z">
+<meta property="og:updated_time" content="2019-08-01T10:11:44.256Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java 8的java.time包">
-<meta name="twitter:description" content="前言在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有： &amp;ensp;1.1 Java的java.util.Date和java.util.Calendar类易用性差，不支持时区，而且他们都不是线程安全的；&amp;ensp;1.2 用于格式化日期的类DateFormat被放在java.text包中，它是一个抽象类，所以我1 们需要实例化一个SimpleDateFormat对象">
+<meta name="twitter:description" content="前言在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有： &amp;ensp;1.1 Java的java.util.Date和java.util.Calendar类易用性差，不支持时区，而且他们都不是线程安全的；&amp;ensp;1.2 用于格式化日期的类DateFormat被放在java.text包中，它是一个抽象类，所以我1 们需要实例化一个SimpleDateFormat对象来">
 
 
 
@@ -406,8 +406,7 @@
       
 
       
-        <hr>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有：</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Java 8之前，所有关于时间和日期的API都存在各种使用方面的缺陷，主要有：</p>
 <p>&ensp;1.1 Java的java.util.Date和java.util.Calendar类易用性差，不支持时区，而且他们都不是线程安全的；<br>&ensp;1.2 用于格式化日期的类DateFormat被放在java.text包中，它是一个抽象类，所以我1 们需要实例化一个SimpleDateFormat对象来处理日期格式化，并且DateFormat也是非线程安全，这意味着如果你在多线程程序中调用同一个DateFormat对象，会得到意想不到的结果。<br>&ensp;1.3对日期的计算方式繁琐，而且容易出错，因为月份是从0开始的，从Calendar中获取的月份需要加一才能表示当前月份。<br>&ensp;由于以上这些问题，出现了一些三方的日期处理框架，例如Joda-Time，date4j等开源项目。但是，Java需要一套标准的用于处理时间和日期的框架，于是Java 8中引入了新的日期API。新的日期API是JSR-310规范的实现，Joda-Time框架的作者正是JSR-310的规范的倡导者，所以能从Java 8的日期API中看到很多Joda-Time的特性。</p>
 <h2 id="Java-8-日期时间-API"><a href="#Java-8-日期时间-API" class="headerlink" title="Java 8 日期时间 API"></a>Java 8 日期时间 API</h2><p>Java 8通过发布新的Date-Time API (JSR 310)来进一步加强对日期与时间的处理。</p>
 <p>Java 8 在 java.time 包下提供了很多新的 API。以下为两个比较重要的 API</p>

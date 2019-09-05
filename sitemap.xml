@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.wbf.ink/links/index.html</loc>
+    
+    <lastmod>2019-09-05T08:25:13.034Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.wbf.ink/categories/index.html</loc>
     
     <lastmod>2019-09-05T07:54:14.353Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://www.wbf.ink/tags/index.html</loc>
     
     <lastmod>2019-09-05T07:53:54.914Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wbf.ink/links/index.html</loc>
-    
-    <lastmod>2019-09-05T07:48:16.892Z</lastmod>
     
   </url>
   

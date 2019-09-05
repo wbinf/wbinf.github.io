@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.wbf.ink/categories/index.html</loc>
+    
+    <lastmod>2019-09-05T07:54:14.353Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wbf.ink/tags/index.html</loc>
+    
+    <lastmod>2019-09-05T07:53:54.914Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wbf.ink/links/index.html</loc>
+    
+    <lastmod>2019-09-05T07:48:16.892Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.wbf.ink/2019/08/30/02-SpringBoot%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
     
     <lastmod>2019-08-30T09:49:22.856Z</lastmod>
@@ -68,27 +89,6 @@
     <loc>http://www.wbf.ink/about/index.html</loc>
     
     <lastmod>2019-07-23T06:41:58.001Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wbf.ink/tags/index.html</loc>
-    
-    <lastmod>2019-07-23T03:50:33.676Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wbf.ink/categories/index.html</loc>
-    
-    <lastmod>2019-07-23T03:46:20.614Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wbf.ink/2019/07/19/hello-world/</loc>
-    
-    <lastmod>2017-10-28T00:39:58.000Z</lastmod>
     
   </url>
   

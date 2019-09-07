@@ -2099,7 +2099,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff78ff;
+  background: #734f55;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3592,6 +3592,10 @@ body {
   bottom: unset;
   top: calc(100vh - 900px - 200px);
 }
+::selection {
+  background: #7fffaa;
+  color: #222;
+}
 .posts-expand .post-title {
   font-size: 26px;
   font-weight: 700;
@@ -3607,6 +3611,23 @@ body {
 }
 .post-body a:hover {
   color: #fc6423;
+}
+code {
+  color: #c7254e;
+  background: #f9f2f4;
+  border: 1px solid #d6d6d6;
+  padding: 1px 4px;
+  word-break: break-all;
+  border-radius: 4px;
+}
+.pagination .page-number.current {
+  background-color: #49b1f5;
+  background: #800080;
+  border-radius: 50%;
+}
+.pagination .page-number {
+  border: 3px solid #800080;
+  border-radius: 50%;
 }
 .v .vwrap .vedit .vemojis {
   background-color: #fff !important;

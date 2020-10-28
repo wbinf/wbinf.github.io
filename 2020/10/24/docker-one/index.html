@@ -77,7 +77,7 @@
 
 
 
-  <meta name="keywords" content="Linux,">
+  <meta name="keywords" content="linux,">
 
 
 
@@ -90,18 +90,23 @@
 
 
 
-<meta name="description" content="支持 IPsec/L2TP 和 Cisco IPsec 协议，可用于 Ubuntu/Debian/CentOS 系统。你只需提供自己的 VPN 登录凭证，然后运行脚本自动完成安装。 IPsec VPN 可以加密你的网络流量，以防止在通过因特网传送时，你和 VPN 服务器之间的任何人对你的数据的未经授权的访问。在使用不安全的网络时，这是特别有用的，例如在咖啡厅，机场或旅馆房间。 我们将使用 Libr">
-<meta name="keywords" content="Linux">
+<meta name="description" content="Docker安装Docker的基本组成 镜像(image) docker镜像就好比一个模板，可以通过这个模板来创建容器服务，tomcat镜像==&amp;gt;run==&amp;gt;tomcat01容器（提供服务器，通过这个镜像可以创建多个容器（最终服务运行或者项目运行就是在容器中的） 容器（container） Docker 利用容器技术，独立运行一个或者一个组应用，通过镜像来创建的。 启动，停止，删除，基">
+<meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用 Linux 脚本一键快速搭建自己的 IPsec VPN 服务器">
-<meta property="og:url" content="https://www.wbf.ink/2019/08/01/Linux-vpn/index.html">
+<meta property="og:title" content="Docker学习 上卷">
+<meta property="og:url" content="https://www.wbf.ink/2020/10/24/docker-one/index.html">
 <meta property="og:site_name" content="随遇而安">
-<meta property="og:description" content="支持 IPsec/L2TP 和 Cisco IPsec 协议，可用于 Ubuntu/Debian/CentOS 系统。你只需提供自己的 VPN 登录凭证，然后运行脚本自动完成安装。 IPsec VPN 可以加密你的网络流量，以防止在通过因特网传送时，你和 VPN 服务器之间的任何人对你的数据的未经授权的访问。在使用不安全的网络时，这是特别有用的，例如在咖啡厅，机场或旅馆房间。 我们将使用 Libr">
+<meta property="og:description" content="Docker安装Docker的基本组成 镜像(image) docker镜像就好比一个模板，可以通过这个模板来创建容器服务，tomcat镜像==&amp;gt;run==&amp;gt;tomcat01容器（提供服务器，通过这个镜像可以创建多个容器（最终服务运行或者项目运行就是在容器中的） 容器（container） Docker 利用容器技术，独立运行一个或者一个组应用，通过镜像来创建的。 启动，停止，删除，基">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-01T10:07:05.689Z">
+<meta property="og:image" content="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=378500507,2500759843&fm=26&gp=0.jpg">
+<meta property="og:image" content="https://www.wbf.ink/images/1024.PNG">
+<meta property="og:image" content="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3029876800,3884924252&fm=26&gp=0.jpg">
+<meta property="og:image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4158452438,1818582037&fm=26&gp=0.jpg">
+<meta property="og:updated_time" content="2020-10-24T07:16:40.013Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用 Linux 脚本一键快速搭建自己的 IPsec VPN 服务器">
-<meta name="twitter:description" content="支持 IPsec/L2TP 和 Cisco IPsec 协议，可用于 Ubuntu/Debian/CentOS 系统。你只需提供自己的 VPN 登录凭证，然后运行脚本自动完成安装。 IPsec VPN 可以加密你的网络流量，以防止在通过因特网传送时，你和 VPN 服务器之间的任何人对你的数据的未经授权的访问。在使用不安全的网络时，这是特别有用的，例如在咖啡厅，机场或旅馆房间。 我们将使用 Libr">
+<meta name="twitter:title" content="Docker学习 上卷">
+<meta name="twitter:description" content="Docker安装Docker的基本组成 镜像(image) docker镜像就好比一个模板，可以通过这个模板来创建容器服务，tomcat镜像==&amp;gt;run==&amp;gt;tomcat01容器（提供服务器，通过这个镜像可以创建多个容器（最终服务运行或者项目运行就是在容器中的） 容器（container） Docker 利用容器技术，独立运行一个或者一个组应用，通过镜像来创建的。 启动，停止，删除，基">
+<meta name="twitter:image" content="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=378500507,2500759843&fm=26&gp=0.jpg">
 
 
 
@@ -131,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="https://www.wbf.ink/2019/08/01/Linux-vpn/">
+  <link rel="canonical" href="https://www.wbf.ink/2020/10/24/docker-one/">
 
 
 
 
 
-  <title>使用 Linux 脚本一键快速搭建自己的 IPsec VPN 服务器 | 随遇而安</title>
+  <title>Docker学习 上卷 | 随遇而安</title>
   
 
 
@@ -326,7 +331,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.wbf.ink/2019/08/01/Linux-vpn/">
+    <link itemprop="mainEntityOfPage" href="https://www.wbf.ink/2020/10/24/docker-one/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="魏斌锋">
@@ -343,7 +348,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用 Linux 脚本一键快速搭建自己的 IPsec VPN 服务器</h1>
+          <h1 class="post-title" itemprop="name headline">Docker学习 上卷</h1>
         
 
         <div class="post-meta">
@@ -355,8 +360,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-01T17:54:55+08:00">
-                2019-08-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-24T15:14:12+08:00">
+                2020-10-24
               </time>
             
 
@@ -378,8 +383,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/docker/" itemprop="url" rel="index">
+                    <span itemprop="name">docker</span>
                   </a>
                 </span>
 
@@ -396,8 +401,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/08/01/Linux-vpn/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/01/Linux-vpn/" itemprop="commentCount"></span>
+                <a href="/2020/10/24/docker-one/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/10/24/docker-one/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -424,7 +429,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  729
+                  806
                 </span>
               
 
@@ -440,7 +445,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -461,28 +466,42 @@
       
 
       
-        <p>支持 IPsec/L2TP 和 Cisco IPsec 协议，可用于 Ubuntu/Debian/CentOS 系统。你只需提供自己的 VPN 登录凭证，然后运行脚本自动完成安装。</p>
-<p>IPsec VPN 可以加密你的网络流量，以防止在通过因特网传送时，你和 VPN 服务器之间的任何人对你的数据的未经授权的访问。在使用不安全的网络时，这是特别有用的，例如在咖啡厅，机场或旅馆房间。</p>
-<p>我们将使用 Libreswan 作为 IPsec 服务器，以及 xl2tpd 作为 L2TP 提供者。<br>快速开始</p>
-<p>首先，在你的 Linux 服务器* 上全新安装一个 Ubuntu LTS, Debian 或者 CentOS 系统。</p>
-<p><strong>使用以下命令快速搭建 IPsec VPN 服务器：</strong><br><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://git.io/vpnsetup -O vpnsetup.sh &amp;&amp; sudo sh vpnsetup.sh</span><br></pre></td></tr></table></figure></div></p>
-<p>如果使用 CentOS，请将上面的地址换成 [<a href="https://note.youdao.com]" target="_blank" rel="noopener">https://note.youdao.com]</a></p>
-<p>你的 VPN 登录凭证将会被<strong>自动随机生成</strong>，并在安装完成后<strong>显示在屏幕上</strong>。</p>
-<p>如需了解其它安装选项，以及如何配置 VPN 客户端，请继续阅读以下部分。<br><a id="more"></a></p>
-<ul>
-<li>一个专用服务器或者虚拟专用服务器 (VPS)。OpenVZ VPS 不受支持。<h4 id="功能特性"><a href="#功能特性" class="headerlink" title="功能特性"></a>功能特性</h4>新: 增加支持更高效的 IPsec/XAuth (“Cisco IPsec”) 模式<br>新: 现在可以下载 VPN 服务器的预构建 Docker 镜像<br>全自动的 IPsec VPN 服务器配置，无需用户输 入<br>封装所有的 VPN 流量在 UDP 协议，不需要 ESP 协议支持<br>可直接作为 Amazon EC2 实例创建时的用户数据使用<br>包含 sysctl.conf 优化设置，以达到更佳的传输性能<br>已测试： Ubuntu 18.04/16.04， Debian 9/8 和 CentOS 7/6<br>Ubuntu &amp; Debian</li>
-</ul>
-<p>首先，更新你的系统： 运行 apt-get update &amp;&amp; apt-get dist-upgrade 并重启。<strong>这一步是可选的</strong>，但推荐。</p>
-<p>要安装 VPN，请从以下选项中<strong>选择一个</strong>：</p>
-<p>选项 1: 使用脚本随机生成的 VPN 登录凭证 （<strong>完成后会在屏幕上显示</strong>）：</p>
-<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://git.io/vpnsetup -O vpnsetup.sh &amp;&amp; sudo sh vpnsetup.sh</span><br></pre></td></tr></table></figure></div>
-<p>选项 2: <strong>编辑脚本并提供你自己的 VPN 登录凭证</strong>：<br><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://git.io/vpnsetup -O vpnsetup.sh</span><br><span class="line">nano -w vpnsetup.sh</span><br></pre></td></tr></table></figure></div></p>
-<p>替换为你自己的值： <code>YOUR_IPSEC_PSK, YOUR_USERNAME 和 YOUR_PASSWORD</code><br><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sh vpnsetup.sh</span><br></pre></td></tr></table></figure></div></p>
-<p>选项 3: 将你<strong>自己的 VPN 登录凭证定义为环境变量</strong>：<br><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget https://git.io/vpnsetup -O vpnsetup.sh &amp;&amp; sudo \</span><br><span class="line">VPN_IPSEC_PSK=&apos;你的IPsec预共享密钥&apos; \</span><br><span class="line">VPN_USER=&apos;你的VPN用户名&apos; \</span><br><span class="line">VPN_PASSWORD=&apos;你的VPN密码&apos; sh vpnsetup.sh</span><br></pre></td></tr></table></figure></div></p>
-<p>注： 如果无法通过 wget 下载，你也可以打开 vpnsetup.sh (或者 vpnsetup_centos.sh)，然后点击右方的 Raw 按钮。按快捷键 Ctrl-A 全选， Ctrl-C 复制，然后粘贴到你喜欢的编辑器。</p>
-<p>CentOS &amp; RHEL<br>首先，更新你的系统： 运行 yum update 并重启。这一步是可选的，但推荐。</p>
-<p>按照与上面相同的步骤，但是将 <a href="https://git.io/vpnsetup" target="_blank" rel="noopener">https://git.io/vpnsetup</a> 换成 <a href="https://git.io/vpnsetup-centos。" target="_blank" rel="noopener">https://git.io/vpnsetup-centos。</a></p>
-
+        <h1 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h1><h2 id="Docker的基本组成"><a href="#Docker的基本组成" class="headerlink" title="Docker的基本组成"></a>Docker的基本组成</h2><p><img src="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=378500507,2500759843&amp;fm=26&amp;gp=0.jpg" alt="img"></p>
+<p><strong>镜像(image)</strong></p>
+<p>docker镜像就好比一个模板，可以通过这个模板来创建容器服务，tomcat镜像==&gt;run==&gt;tomcat01容器（提供服务器，通过这个镜像可以创建多个容器（最终服务运行或者项目运行就是在容器中的）</p>
+<p><strong>容器（container）</strong></p>
+<p><code>Docker</code> 利用容器技术，独立运行一个或者一个组应用，通过镜像来创建的。</p>
+<p>启动，停止，删除，基本命令!目前就可以把这个容器理解为一个简易的linux系统</p>
+<p><strong>仓库（repository）</strong></p>
+<p>仓库就是存放镜像的地方，仓库分为公有和私有仓库。</p>
+<p>例如<code>Docker Hub</code>（默认国外）阿里云等都有容器服务器（可配置国内镜像达到加速效果）</p>
+<a id="more"></a>
+<h2 id="安装DOcker"><a href="#安装DOcker" class="headerlink" title="安装DOcker"></a>安装DOcker</h2><p><strong>环境准备:</strong></p>
+<p>1、需要一点点的linux基础</p>
+<p>2、Ubuntu18</p>
+<p>3 使用XShell远程连接</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>系统环境</span><br><span class="line">root@wbinf:~# cat /etc/os-release </span><br><span class="line">NAME="Ubuntu"</span><br><span class="line">VERSION="18.04.2 LTS (Bionic Beaver)"</span><br><span class="line">ID=ubuntu</span><br><span class="line">ID_LIKE=debian</span><br><span class="line">PRETTY_NAME="Ubuntu 18.04.2 LTS"</span><br><span class="line">VERSION_ID="18.04"</span><br><span class="line">HOME_URL="https://www.ubuntu.com/"</span><br><span class="line">SUPPORT_URL="https://help.ubuntu.com/"</span><br><span class="line">BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"</span><br><span class="line">PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"</span><br><span class="line">VERSION_CODENAME=bionic</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>卸载旧的docker环境 （Uninstall old versions）</span><br><span class="line"><span class="meta">$</span> sudo apt-get remove docker docker-engine docker.io containerd runc</span><br></pre></td></tr></table></figure></div>
+<blockquote>
+<p><strong>安装</strong></p>
+</blockquote>
+<p>​    </p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>安装docker 使用官方安装脚本自动安装</span><br><span class="line">curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun</span><br><span class="line"><span class="meta">#</span>设置镜像仓库（使用国内的镜像仓库）</span><br><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-'EOF'</span><br><span class="line">&#123;</span><br><span class="line">  "registry-mirrors": ["https://7lmsbqxx.mirror.aliyuncs.com"]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure></div>
+<h2 id="Docker-运行原理"><a href="#Docker-运行原理" class="headerlink" title="Docker 运行原理"></a><code>Docker</code> 运行原理</h2><p>Docker是一个<code>Client-Server</code>结构的系统，Docker的守护进程运行在主机上，通过<code>Socket</code>从客户端访问！<code>DockerServer</code>接收到<code>Docker-Client</code>的指令，就好执行这个命令!</p>
+<p><img src="https://www.wbf.ink/images/1024.PNG" alt="image-20201024110737596"></p>
+<p><strong><code>Docker</code>为什么比<code>VMware</code>快</strong></p>
+<p>1、<code>Docker</code>有着比虚拟机更少的抽象层</p>
+<p>2、<code>Docker</code>利用的是宿主机的内核，<code>VMware</code>需要在创建的客户操作系统中</p>
+<p><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3029876800,3884924252&amp;fm=26&amp;gp=0.jpg" alt="docker为什么比VM快"></p>
+<p>所以说，新建一个容器的时候。docker不需要像虚拟机一样重新加载一个新的操作系统内核，避免引导，虚拟机是加载<code>Guest OS</code>，速度是分钟级别的，而docker是利用宿主机的操作系统，省略了这个复杂过程。速度是分钟级别的。</p>
+<p><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4158452438,1818582037&amp;fm=26&amp;gp=0.jpg" alt></p>
+<h2 id="Docker常用命令"><a href="#Docker常用命令" class="headerlink" title="Docker常用命令"></a><code>Docker</code>常用命令</h2><h3 id="帮助命令"><a href="#帮助命令" class="headerlink" title="帮助命令"></a>帮助命令</h3><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>显示docker的版本信息</span><br><span class="line">docker version</span><br><span class="line"><span class="meta">#</span>显示docker系统信息，包括镜像容器的数量等</span><br><span class="line">docker info</span><br><span class="line"><span class="meta">#</span>帮助命令</span><br><span class="line">docker 命令 --help</span><br></pre></td></tr></table></figure></div>
+<p><a href="https://docs.docker.com/reference/" target="_blank" rel="noopener">帮助文档的地址</a></p>
+<h3 id="镜像命令"><a href="#镜像命令" class="headerlink" title="镜像命令"></a>镜像命令</h3><p><strong><code>docker -images</code></strong>  看所有本机上的镜像</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">root@wbinf:/www/wwwroot/www.wbf.ink/images# docker images</span><br><span class="line">REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</span><br><span class="line">tomcat              latest              6055d4d564e1        3 months ago        647MB</span><br><span class="line">rabbitmq            management          cc86ffa2f398        4 months ago        186MB</span><br><span class="line"><span class="meta">#</span>解释</span><br><span class="line">REPOSITORY #镜像的名称（仓库源）</span><br><span class="line">TAG		#镜像标签</span><br><span class="line">IMAGE ID	#镜像ID	</span><br><span class="line">CREATED		#镜像创建时间</span><br><span class="line">SIZE	#镜像大小</span><br><span class="line"><span class="meta">#</span>可选项</span><br><span class="line">  -a, --all             Show all images (default hides intermediate images)#列出所有选项</span><br><span class="line">  -q, --quiet           Only show numeric IDs #只显示镜像的id</span><br></pre></td></tr></table></figure></div>
+<p><strong><code>docker -search</code></strong> 搜索镜像</p>
+<div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="SHELL"><figure class="iseeu highlight /shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">root@wbinf:/www/wwwroot/www.wbf.ink/images# docker search mysql</span><br><span class="line">NAME                              DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED</span><br><span class="line">mysql                             MySQL is a widely used, open-source relation…   10097               [OK]                </span><br><span class="line">mariadb                           MariaDB is a community-developed fork of MyS…   3705                [OK]                </span><br><span class="line">mysql/mysql-server                Optimized MySQL Server Docker images. Create…   737                                     [OK]</span><br><span class="line">percona                           Percona Server is a fork of the MySQL relati…   511                 [OK]                </span><br><span class="line">centos/mysql-57-centos7           MySQL 5.7 SQL database server                   84</span><br></pre></td></tr></table></figure></div>
+<h3 id="容器命令"><a href="#容器命令" class="headerlink" title="容器命令"></a>容器命令</h3>
       
     </div>
     
@@ -523,7 +542,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
+            <a href="/tags/linux/" rel="tag"># linux</a>
           
         </div>
       
@@ -536,8 +555,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/01/HttpClient/" rel="next" title="Http请求工具类（HttpClient）">
-                <i class="fa fa-chevron-left"></i> Http请求工具类（HttpClient）
+              <a href="/2020/03/21/webmagic-ip代理池/" rel="next" title="webmagic-ip代理池">
+                <i class="fa fa-chevron-left"></i> webmagic-ip代理池
               </a>
             
           </div>
@@ -545,10 +564,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/30/01-java多线程/" rel="prev" title="01_java多线程">
-                01_java多线程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -694,7 +709,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#功能特性"><span class="nav-number">1.</span> <span class="nav-text">功能特性</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker安装"><span class="nav-number">1.</span> <span class="nav-text">Docker安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker的基本组成"><span class="nav-number">1.1.</span> <span class="nav-text">Docker的基本组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装DOcker"><span class="nav-number">1.2.</span> <span class="nav-text">安装DOcker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker-运行原理"><span class="nav-number">1.3.</span> <span class="nav-text">Docker 运行原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker常用命令"><span class="nav-number">1.4.</span> <span class="nav-text">Docker常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#帮助命令"><span class="nav-number">1.4.1.</span> <span class="nav-text">帮助命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#镜像命令"><span class="nav-number">1.4.2.</span> <span class="nav-text">镜像命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#容器命令"><span class="nav-number">1.4.3.</span> <span class="nav-text">容器命令</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
